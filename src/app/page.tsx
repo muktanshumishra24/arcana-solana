@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import { ProvideAuth } from "@arcana/auth-react";
-import { MintNft } from "../components/mintNft";
+import { MintNft } from "../components/mintnft";
 import { getAuth } from "../components/getArcanaAuth";
 const auth = getAuth();
 
