@@ -51,24 +51,12 @@ export const MintNft = () => {
     <div className="flex flex-col gap-y-8 text-center items-center">
       <div className="flex gap-x-4">
         <button
-          className="bg-white text-black px-6 py-2 rounded-lg hover:opacity-80 flex gap-x-4 items-center"
-          onClick={login}
-        >
-          {!isLoggedIn && "Login"} {authLoading && <Loader />}
-          {isLoggedIn && user?.address}
-        </button>
-        <button
           className="bg-white text-black cursor-pointer px-6 py-2 rounded-lg hover:opacity-80 flex gap-x-4 items-center"
           onClick={mintNft}
         >
           Mint NFT {loading && <Loader />}
         </button>
       </div>
-      {nftData && (
-        <p className="flex justify-center border-b bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          🎉 🎉 NFT Minted 🎉 🎉
-        </p>
-      )}
     </div>
   );
 };
